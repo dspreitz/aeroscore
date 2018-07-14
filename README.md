@@ -69,6 +69,21 @@ To check if you installation was successfull, run
 ts-node examples/live-scoring.ts
 ```
 
+Live-Scoring
+------------------------------------------------------------------------------
+You can use aeroscore to perform a live scoring of a running contest task. aeroscore can read a given task (XCSoar tsk format) and filter (Glidertracker.org fromat) to perform live scoring of the task.
+aeroscore connects to Glidertracker.org via WebSocket connection and continuously receives OGN data from the GliderTracker, which it evaluates into a live scoring.
+
+Live-scoring using local filter and task files can be started like this
+```bash
+ts-node examples/live-scoring.ts fixtures/Luesse/task.tsk fixtures/Luesse/filter.csv
+```
+
+Live-scoring using remote filter and task files directly from GliderTracker.org can be started like this
+```bash
+ts-node examples/live-scoring.ts "http://glidertracker.org/#tsk=https://gist.github.com/hsteinhaus/4369987643f0081d49c4458baa8c1422/raw/task&lst=https://gist.github.com/hsteinhaus/4369987643f0081d49c4458baa8c1422/raw/filter"
+```
+
 
 License
 ------------------------------------------------------------------------------
