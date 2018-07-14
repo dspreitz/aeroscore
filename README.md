@@ -31,10 +31,14 @@ Installation
 ------------------------------------------------------------------------------
 To install aeroscore you need to install:
 
+GIT and curl
+```bash
+sudo apt-get install git curl
+```
+
 Node.js
 ```bash
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ```
 
 Yarn
@@ -45,27 +49,18 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 Logout (exit) and back in again
 
 ```bash
-yarn global add ts-node
-```
-
-GIT
-
-```bash
-sudo apt-get install git
+yarn global add ts-node typescript
 ```
 
 aeroscore
-
 ```
 git clone https://github.com/Turbo87/aeroscore.git
 ```
 
 Change into aeroscore directory and install dependencies
-
 ```bash
 cd aeroscore
 yarn install
-yarn global add typescript
 ```
 
 To check if you installation was successfull, run
