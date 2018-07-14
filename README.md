@@ -27,6 +27,16 @@ ts-node examples/calc-ranking.ts fixtures/2017-07-17-lev
 ```
 
 
+Installation
+------------------------------------------------------------------------------
+To install aeroscore you need to install
+
+```bash
+yarn global add ts-node
+```
+
+
+
 License
 ------------------------------------------------------------------------------
 
