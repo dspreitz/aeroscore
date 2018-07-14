@@ -29,7 +29,7 @@ ts-node examples/calc-ranking.ts fixtures/2017-07-17-lev
 
 Installation
 ------------------------------------------------------------------------------
-To install aeroscore you need to install
+To install aeroscore you need to install:
 
 Node.js
 ```bash
@@ -54,12 +54,15 @@ GIT
 sudo apt-get install git
 ```
 
-```bash
+aeroscore
+
+```
 git clone https://github.com/Turbo87/aeroscore.git
 ```
 
 Change into aeroscore directory and install dependencies
-````bash
+
+```bash
 cd aeroscore
 yarn install
 yarn global add typescript
