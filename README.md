@@ -31,10 +31,45 @@ Installation
 ------------------------------------------------------------------------------
 To install aeroscore you need to install
 
+Node.js
+```bash
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+Yarn
+```bash
+curl -o- -L https://yarnpkg.com/install.sh | bash
+```
+
+Logout (exit) and back in again
+
 ```bash
 yarn global add ts-node
 ```
 
+GIT
+
+```bash
+sudo apt-get install git
+```
+
+```bash
+git clone https://github.com/Turbo87/aeroscore.git
+```
+
+Change into aeroscore directory and install dependencies
+````bash
+cd aeroscore
+yarn install
+yarn global add typescript
+```
+
+To check if you installation was successfull, run
+
+```bash
+ts-node examples/live-scoring.ts
+```
 
 
 License
